@@ -1,0 +1,19 @@
+class Solution {
+    public double myPow(double x, int n) {
+        double res;
+        
+           
+
+        if(n<0){
+            long m=n;
+            double i=1/x;
+            m=m*(-1);
+            res=Math.pow(i,m);
+        }
+        else{
+            long m=n;
+            res=Math.pow(x,m);
+        }
+        return res;
+    }
+}

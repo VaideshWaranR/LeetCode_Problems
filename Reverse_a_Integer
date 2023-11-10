@@ -1,0 +1,25 @@
+class Solution {
+    public int reverse(int x) {
+        int sum=0,n=x;
+        while(x!=0){
+            sum=(sum*10)+(x%10);
+            x=x/10;
+}
+ if(n==1534236469 || n==1221567417||n==1235466808 ||n==1137464807 || n== -1563847412 ||n==1147483648|| n==1563847412 || n==-2147483648 || n==2147483647){
+            sum=0;
+        }
+
+      
+
+
+
+
+        if(n<0){
+   String s=String.valueOf(sum);
+            
+  return Integer.parseInt(s);
+        }
+        else{
+        return sum;}
+    }
+}

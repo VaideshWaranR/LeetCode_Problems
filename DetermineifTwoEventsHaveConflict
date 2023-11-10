@@ -1,0 +1,26 @@
+class Solution {
+    public boolean haveConflict(String[] event1, String[] event2) {
+ 
+ 
+ /*
+int a=Integer.parseInt(event1[0].replaceAll(":",""));
+ int b=Integer.parseInt(event1[1].replaceAll(":",""));
+  int c=Integer.parseInt(event2[0].replaceAll(":",""));
+        int d=Integer.parseInt(event2[1].replaceAll(":",""));
+ if((a<=c && b>=c) || (a<=d && b>=d) || (c<=a && d>=a)){
+      return true;
+  }
+
+        else{
+            return false;
+        }*/
+        
+     
+        
+
+   return event1[0].compareTo(event2[1])<=0 && event2[0].compareTo(event1[1])<=0;
+
+    
+
+    }
+}
